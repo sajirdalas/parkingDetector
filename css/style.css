@@ -1,0 +1,75 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background-image: url(../img/ui/irongrip.png);
+    background-repeat:repeat;
+}
+
+#wrapper{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1000px;
+	color: white;
+	text-align: center;
+}
+
+@-moz-keyframes rotate {
+from {
+-moz-transform: rotateZ(0deg);
+}
+to { -moz-transform: rotateZ(-360deg);}
+}
+
+@-webkit-keyframes rotate {
+from {
+-webkit-transform: rotateZ(0deg);
+}
+to { -webkit-transform: rotateZ(-360deg);}
+}
+
+#rotating_icon{
+	padding-top: 10px;
+	height: 200px;
+	width: 200px;
+	margin: 300px auto;
+	background-color: #66CCFF;
+	border-radius: 3px;
+	text-align: center;
+}
+
+#rotating_icon > img{
+	width: 50%;
+	margin: 0 auto;
+	height: auto;
+	display: block;
+	-moz-animation: rotate 1s;
+	-webkit-animation: rotate 1s;
+	-moz-animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#results{
+	margin-top: 200px;
+	display: none;
+}
+
+#results > h1, #results > div{
+	margin-bottom: 30px;
+}
+
+#gmapButton{
+	width: 5%;
+	height: auto;
+	margin: 15px auto;
+	display: block;
+}
+
+#nextButton{
+	margin-top: 15px;
+}
