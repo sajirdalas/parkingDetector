@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	<link rel="stylesheet" href="css/style.css" media="screen" />   
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true&key=AIzaSyCzNRjGsZ_MHdvrLHPqcXmqM31VuMVi1mM"></script> 
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/main.js"></script> 
+  </head>
+  <!-- <body onload="dummyInitialize()"> -->
+  <body onload="initialize()">
+  <!-- <body> -->
+    <div id="wrapper">
+
+  <div id="rotating_icon">
+    <img src="img/refresh.png"></img> Please wait, getting your location and nearest parking
+  </div>
+
+  <div id="results">
+    <h1>Your parking has been found</h1>
+    <div id="name"><strong>Name: </strong></div>
+    <div id="vicinity"><strong>Vicinity: </strong></div>
+    <img id="gmapButton" src="img/Google-Maps-icon.png" onclick="goToMap()"></img>
+    <input type="button" id="nextButton" value="show next location" onclick="nextElement()"></input>
+  </div>
+
+  </div>
+    <div id="map" style="display: none"/>
+
+  </body>
+</html>

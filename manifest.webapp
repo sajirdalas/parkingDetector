@@ -1,0 +1,20 @@
+{
+    "name": "parkingDetector",
+    "description": "testing",
+    "launch_path": "/index.html",
+    "type" : "privileged",
+    "icons": {
+        "60": "/img/art60.png",
+        "128": "/img/art128.png"
+    },
+    "developer": {
+        "name": "Sajirdalas"
+    },
+    "default_locale": "en",
+    "installs_allowed_from": [
+        "*"
+    ],
+    "permissions": {
+    "systemXHR": { "description": "Required for STUFF" }
+     }   
+}
