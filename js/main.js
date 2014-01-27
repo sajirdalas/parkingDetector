@@ -103,7 +103,6 @@ function getGoogleDirections(origin,end){
 
 function goToMap(){
   var mapAddr = getGoogleDirections(cLocation,cDestination);
-  alert(mapAddr);
   // var mapAddr = "geo:41.4093890,2.1602520?q=41.4093891,2.1602521";
   if(mapAddr!="error"){
     window.location = mapAddr;
